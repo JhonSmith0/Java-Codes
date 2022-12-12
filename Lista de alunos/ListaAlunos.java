@@ -68,7 +68,9 @@ public class ListaAlunos {
                 Aluno next = alunos[i + 1];
 
                 int calc = next.nome.compareTo(current.nome);
-
+                // int calc = Ordenar.sort(next.nome, current.nome);
+                System.out.println(calc);
+                
                 if (calc < 0) {
                     alunos[i] = alunos[i + 1];
                     alunos[i + 1] = current;
@@ -153,7 +155,7 @@ public class ListaAlunos {
                 break;
 
             case 3:
-                this.mostrarAlunos();
+                this.ordenarPorOrdem().mostrarAlunos();
                 break;
 
             case 4:
